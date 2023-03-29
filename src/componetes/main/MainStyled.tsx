@@ -28,15 +28,14 @@ export const ContainerImg = styled.div`
     align-items: flex-end;
     justify-content: flex-start;
 
-    
-    
   }
 `
 export const MyPhoto = styled.img`
     width: 50%;
     height: 50%;
     @media (max-width: 480px) {
-    width: 30%;
+    width: 20%;
+    margin-left: 3rem;
   }
 `
 
@@ -54,10 +53,13 @@ export const ErrowName = styled.div`
 `
 
 export const Frase = styled.div`
+    display: flex;
+    flex-direction: column;
     margin: auto 0;
     max-width: 500px;
     @media (max-width: 480px) {
         margin: 0;
+        gap: 1rem;
   }
 `
 
