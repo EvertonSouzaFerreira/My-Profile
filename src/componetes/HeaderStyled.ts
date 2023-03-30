@@ -4,6 +4,7 @@ import styled from "styled-components"
 export const ContainerHeader = styled.div`
     display: flex;
     align-items: center;
+    justify-content: space-around;
     padding-left: 1rem;
     max-width: 100vw;
     height: 15vh;
@@ -12,6 +13,7 @@ export const ContainerHeader = styled.div`
     @media (max-width: 480px) {
         justify-content: flex-start;
         height: 5vh;
+        
     }
 `
 
@@ -31,6 +33,7 @@ export const Ul = styled.ul`
     gap: 3rem;
     list-style: none;
     color: white;
+    
     @media (max-width: 480px) {
         gap: 2rem;
         align-items: center;

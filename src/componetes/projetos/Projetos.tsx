@@ -47,8 +47,8 @@ const Projetos: React.FC =() => {
         
           </ContainerProjetos>
        <ContainerBtns>
-       <Btns onClick={handleMoveProjectLeft}>seta esquerda</Btns>
-       <Btns onClick={handleMoveProject}>seta Direita</Btns>
+       <Btns onClick={handleMoveProjectLeft}>Seta Esquerda</Btns>
+       <Btns onClick={handleMoveProject}>Seta Direita</Btns>
       </ContainerBtns>
       
     </ContainerProjetosComBtns>

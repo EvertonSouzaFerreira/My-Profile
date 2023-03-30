@@ -19,7 +19,7 @@ const Main:React.FC = () => {
         
         </ContainerImg>
         <Frase>Um Desenvolvedor com o objetivo de
-            <h2>Facilita a interação dos <span style={{position: 'relative', color: '#7127BA'}}><img style={{width: '100%', position: 'absolute' }} src={ellips}></img>usuários</span> com o mundo digital</h2>
+            <h2>Facilitar a interação dos <span style={{position: 'relative', color: '#7127BA'}}><img style={{width: '100%', position: 'absolute' }} src={ellips}></img>usuários</span> com o mundo digital</h2>
             <div style={{textAlign: 'left'}}>
     <h2>I'm a Software Enginner.!</h2>
     <p>Atualmente estou a procura de uma empresa que me de uma oportunidade de mostrar tudo o que venho aprimorando nos últimos anos e conseqüentemente crescermos juntos</p>

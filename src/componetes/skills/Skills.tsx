@@ -75,7 +75,7 @@ function Skills() {
 em cursos extras no momento esta no display as skills front-and para verificar as
 skills back-and click no botão abaixo
         </p> 
-        <BtnSend onClick={handleChangeTech}>{techs=== 'front'? 'back': 'front'}</BtnSend>
+        <BtnSend onClick={handleChangeTech}>{techs=== 'front'? 'Back-and': 'Front-and'}</BtnSend>
         <TodasSkills>
             
 

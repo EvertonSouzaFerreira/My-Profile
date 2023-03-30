@@ -1,3 +1,10 @@
+*{
+    text-decoration: none;
+}
+a{
+    color: blueviolet;
+}
+
 :root{
     --size: 100px
 }

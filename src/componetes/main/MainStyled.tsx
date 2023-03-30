@@ -34,7 +34,8 @@ export const MyPhoto = styled.img`
     width: 50%;
     height: 50%;
     @media (max-width: 480px) {
-    width: 20%;
+    width: 18%;
+    height: 60%;
     margin-left: 3rem;
   }
 `

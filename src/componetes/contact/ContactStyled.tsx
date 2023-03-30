@@ -100,4 +100,8 @@ export const BtnSend = styled.button`
     border: none;
     color: white;
     border-radius: 5px;
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
 `

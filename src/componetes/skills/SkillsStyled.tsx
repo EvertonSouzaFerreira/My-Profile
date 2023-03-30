@@ -78,7 +78,7 @@ export const PrimeiroVetorFromRight = styled.img`
 `
 
 export const BtnSend = styled.button`
-    width: 100px;
+    width: 100%;
     height: 40px;
     padding: 5px;
     cursor: pointer;
@@ -87,4 +87,5 @@ export const BtnSend = styled.button`
     border: none;
     color: white;
     border-radius: 5px;
+
 `
