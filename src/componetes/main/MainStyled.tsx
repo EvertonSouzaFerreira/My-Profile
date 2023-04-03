@@ -5,6 +5,8 @@ export const ContainerMain = styled.div`
     display: flex;
     gap: 2rem;
     padding: 0 2rem 0 2rem;
+    align-items: center;
+    justify-content: center;
     height: 85vh;
     @media (max-width: 480px) {
     flex-direction: column;
@@ -21,6 +23,7 @@ export const ContainerImg = styled.div`
     justify-content: center;
     width: 385px;
     height: 431px;
+    min-width: 205px;
     background-image: url(${fundoFoto});
     @media (max-width: 480px) {
     width: 100%;
@@ -42,7 +45,9 @@ export const MyPhoto = styled.img`
 
 export const ErrowName = styled.div`
     position: absolute;
-    left: 220px;
+    left: 50%;
+    raght: 50%;
+    transform: translate(-50%);
     top: 90px;
     /* border: solid red 3px; */
     display: flex;
@@ -56,7 +61,7 @@ export const ErrowName = styled.div`
 export const Frase = styled.div`
     display: flex;
     flex-direction: column;
-    margin: auto 0;
+    margin-top: 1rem;
     max-width: 500px;
     @media (max-width: 480px) {
         margin: 0;
