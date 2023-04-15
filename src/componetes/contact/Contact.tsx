@@ -49,19 +49,6 @@ const Contact:React.FC = () => {
     
     <ContainerContact id='contact'>
     <h2>Contate-me</h2>
-        {/* <ContainerCardsContact>
-        
-            <CardContact>
-                <p>Email</p>
-                <p style={{fontSize: '10px'}}>evertonsouzaferreira8@gmail.com</p>
-                <p>Enviar menssagem</p>
-            </CardContact>
-            <CardContact>
-                <p>WhatsApp</p>
-                <p>+31 6 87954793</p>
-                <p>Enviar menssagem</p>
-            </CardContact>
-        </ContainerCardsContact> */}
         <ContainerForm ref={form} onSubmit={sendEmail}>
             <InputInfos type="text" name='nome' placeholder='Nome Completo' value={formValues.nome} onChange={(event) => setFormValues({ ...formValues, nome: event.target.value })} required />
             <InputInfos type="email" name='email' placeholder='Seu Email' value={formValues.email} onChange={(event) => setFormValues({ ...formValues, email: event.target.value })} required />

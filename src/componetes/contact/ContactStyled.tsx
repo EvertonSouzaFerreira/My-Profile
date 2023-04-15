@@ -31,8 +31,9 @@ export const ContainerContact = styled.div`
       line-height: 16px;
     }
     @media (max-width: 480px) {
+    width: 100%;
     flex-direction: column;
-    gap: 0;
+    gap: .5rem;
   }
 `
 export const ContainerCardsContact = styled.div`
