@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from '../imgs/Logo.png'
-import Cube from './cube/Cube'
+import logo from '../../imgs/Logo.png'
+import Cube from '../cube/Cube'
 
 // interface ChidrenProps {
 //   selectedRadio: string
@@ -14,10 +14,10 @@ const Header:React.FC = () => {
   return (
     <ContainerHeader>
       {/* <Cube techs='test' selectedRadio='nome' rotaite/> */}
-        <LogoContainer ><ImgLogo src={logo} alt="Logo"/></LogoContainer>
+        <LogoContainer >// Everton-Ferreira</LogoContainer>
         <Ul>
-            <a href='#'>Home</a>
-            <a href='#skills'>Skills</a>
+            <a href='#'>_hello</a>
+            {/* <a href='#skills'>Skills</a> */}
             <a href='#projetos'>Projetos</a>
             {/* <a href='#about'>About</a> */}
             <a href='#contact'>Contact</a>

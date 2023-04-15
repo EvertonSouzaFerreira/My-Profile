@@ -3,82 +3,107 @@ import fundoFoto from '../../imgs/fundo-Foto.png'
 
 export const ContainerMain = styled.div`
     display: flex;
-    gap: 2rem;
-    padding: 0 2rem 0 2rem;
+    flex-direction: row-reverse;
+    gap: .5rem;
+    padding: 0 2rem 0 5rem;
     align-items: center;
     justify-content: center;
-    height: 85vh;
+    /* background-image: url(${fundoFoto}); */
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
     @media (max-width: 480px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    font-size: smaller;
     align-items: center;
     gap: 3rem;
-    padding: 0;
+    padding: 0 2rem 0 2rem;
   }
 `
-export const ContainerImg = styled.div`
+export const ContainerCube = styled.div`
     display: flex;
-    
+    /* background-image: url(${fundoFoto}); */
     position: relative;
     align-items: center;
     justify-content: center;
-    width: 385px;
-    height: 431px;
+    width: 100%;
+    /* width: 385px;
+    height: 431px; */
     min-width: 205px;
-    background-image: url(${fundoFoto});
+    /* background-image: url(${fundoFoto}); */
     @media (max-width: 480px) {
     width: 100%;
     height: 150px;
     align-items: flex-end;
     justify-content: flex-start;
+    gap: 1rem;
 
   }
 `
-export const MyPhoto = styled.img`
-    width: 50%;
-    height: 50%;
-    @media (max-width: 480px) {
-    width: 18%;
-    height: 60%;
-    margin-left: 3rem;
+export const BtnSetTech = styled.button`
+  background: none;
+  color: #818DED;
+  cursor: pointer;
+  border: solid 1px #FFFFFF;
+  width: 100%;
+  padding: .5rem;
+  :hover{
+    color: #43D9AD;
   }
 `
 
-export const ErrowName = styled.div`
-    position: absolute;
-    left: 50%;
-    raght: 50%;
-    transform: translate(-50%);
-    top: 90px;
-    /* border: solid red 3px; */
-    display: flex;
-    color: white;
-    @media (max-width: 480px) {
-        left: 90px;
-        top: 25px;
-  }
-`
 
 export const Frase = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
     max-width: 500px;
+    color: #E5E9F0;
+    h2{
+      margin: 0;
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 56px;
+    }
+    h3{
+      font-weight: 450;
+      font-size: 22px;
+      line-height: 42px;
+      color: #818DED;
+      margin: 0;
+    }
+    p{
+      margin: 0;
+      
+    }
+    div p {
+      color: #43D9AD;
+    }
+    span{
+      color: #818DED;
+    }
+    //
+
     @media (max-width: 480px) {
+        margin-top: 0;
+        gap: 0;
+
+        h2{
         margin: 0;
-        gap: 1rem;
+        font-weight: 300;
+        font-size: 28px;
+      }
+      h3{
+      font-weight: 350;
+      font-size: 18px;
+      line-height: 42px;
+      color: #818DED;
+      margin: 0;
+    }
   }
 `
 
-export const Resumo = styled.div`
-    display: flex;
-    max-width: 80%;
-    padding: 0 2rem 0 2rem;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    @media (max-width: 480px) {
-        
-  }
-`
+
 

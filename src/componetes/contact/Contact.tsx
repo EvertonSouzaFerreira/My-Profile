@@ -1,5 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
+import gitHubIcon from '../../imgs/githubSimbol.png'
+import { AiFillLinkedin } from 'react-icons/ai';
 
 import { ContainerContact, ContainerCardsContact,ContainerForm, CardContact, InputInfos, Textarea, BtnSend,MainContact  } from './ContactStyled'
 
@@ -44,10 +46,10 @@ const Contact:React.FC = () => {
 
   return (
     <MainContact id='contact'>
-    <h2 style={{textAlign: 'center', margin: 0}}>Contate-me</h2>
-    <ContainerContact>
     
-        <ContainerCardsContact>
+    <ContainerContact>
+    <h2>Contate-me</h2>
+        {/* <ContainerCardsContact>
         
             <CardContact>
                 <p>Email</p>
@@ -59,7 +61,7 @@ const Contact:React.FC = () => {
                 <p>+31 6 87954793</p>
                 <p>Enviar menssagem</p>
             </CardContact>
-        </ContainerCardsContact>
+        </ContainerCardsContact> */}
         <ContainerForm ref={form} onSubmit={sendEmail}>
             <InputInfos type="text" name='nome' placeholder='Nome Completo' value={formValues.nome} onChange={(event) => setFormValues({ ...formValues, nome: event.target.value })} required />
             <InputInfos type="email" name='email' placeholder='Seu Email' value={formValues.email} onChange={(event) => setFormValues({ ...formValues, email: event.target.value })} required />
@@ -68,6 +70,11 @@ const Contact:React.FC = () => {
         </ContainerForm>
 
     </ContainerContact>
+    <ul>
+      <li style={{fontSize: '10px'}}><img src={gitHubIcon} alt="" /> https://github.com/EvertonSouzaFerreira</li>
+      <li style={{fontSize: '10px'}}>  https://www.linkedin.com/in/everton-de-souza-ferreira-1417921b2/</li>
+      
+    </ul>
     </MainContact>
     
   )

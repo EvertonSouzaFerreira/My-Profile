@@ -8,18 +8,19 @@ export const ContainerSkills = styled.div`
     display: flex;
     margin: auto;
     position: relative;
-    gap: 2rem;
+   
     align-items: center;
-    width: 80%;
+    width: 100%;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     justify-content: center;
+   
     @media (max-width: 480px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 0;
+    gap: 2rem;
   }
 `
 
@@ -28,6 +29,14 @@ export const TodasSkills = styled.ul`
     gap: 1rem;
     
     list-style: none;
+    @media (max-width: 980px) {
+        gap: .2rem;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
     @media (max-width: 480px) {
         gap: .2rem;
         align-items: flex-start;
@@ -43,7 +52,15 @@ export const Skiil = styled.li`
     align-items: center;
     justify-content: center;
     background-size: cover;
-    background-image: url(${fundoSkill});
+   
+    input{
+        width: 74px;
+        aspect-ratio: 1;
+        padding: 1rem;
+    }
+    :hover{
+        background-image: url(${fundoSkill});
+    }
 `
 
 export const ImgSelecionada = styled.div`
@@ -57,13 +74,14 @@ export const ImgSelecionada = styled.div`
 
 export const ContainerSkillSelecionada = styled.div`
     width: 100%;
+    max-width: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 330px;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-image: url(${fundoSkillSelecionada});
+   
 `
 
 export const ContainerVetores = styled.div`
@@ -78,14 +96,22 @@ export const PrimeiroVetorFromRight = styled.img`
 `
 
 export const BtnSend = styled.button`
-    width: 100%;
-    height: 40px;
-    padding: 5px;
-    cursor: pointer;
-    margin-right: auto;
-    background: #3b0255;
+  background: none;
+  color: #818DED;
+  cursor: pointer;
+  border: solid 1px #818DED;
+  border-radius: 5px;
+  width: 50%;
+  padding: .5rem;
+  :hover{
+    color: #43D9AD;
+    background: linear-gradient(180deg, #C443D9 0%, #4D5BCE 100%);
     border: none;
-    color: white;
-    border-radius: 5px;
+    color: #FFFFFF;
+  }
+
+  @media (max-width: 480px) {
+        margin-top: 1rem;
+    }
 
 `

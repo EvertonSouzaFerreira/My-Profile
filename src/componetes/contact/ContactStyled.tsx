@@ -4,6 +4,7 @@ import fundoFoto from '../../imgs/fundo-Foto.png'
 
 export const MainContact = styled.div`
     display: flex;
+    width: 100vw;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
@@ -12,16 +13,23 @@ export const MainContact = styled.div`
 
 export const ContainerContact = styled.div`
     display: flex;
-    width: 90%;
-    background-image : url(${fundoFoto});
+    width: 100%;
+    /* background-image : url(${fundoFoto}); */
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
     justify-content: center;
     font-size: 12px;
     gap: 1rem;
+    color: #E5E9F0;
+    h2{
+      margin: 0;
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 16px;
+    }
     @media (max-width: 480px) {
-      flex-direction: column-reverse;
+    flex-direction: column;
     gap: 0;
   }
 `
@@ -74,7 +82,7 @@ export const InputInfos = styled.input`
     position: relative;
     background: transparent;
     width: 100%;
-    border: 2px solid #2B0B3A;
+    border: solid 1px #818DED;
     font-size: 14px;
     padding: 10px;
     color: white;
@@ -84,24 +92,28 @@ export const Textarea = styled.textarea`
      background: transparent;
      width: 100%;
      height: 200px;
-     border: 2px solid #2B0B3A;
+     border: solid 1px #818DED;
      font-size: 14px;
      padding: 5px;
      color: white;
 `
 
 export const BtnSend = styled.button`
-    width: 30%;
-    height: 40px;
-    padding: 5px;
-    cursor: pointer;
-    margin-right: auto;
-    background: #2B0B3A;
+    background: none;
+  color: #818DED;
+  cursor: pointer;
+  border: solid 1px #818DED;
+  border-radius: 5px;
+  width: 50%;
+  padding: .5rem;
+  :hover{
+    color: #43D9AD;
+    background: linear-gradient(180deg, #C443D9 0%, #4D5BCE 100%);
     border: none;
-    color: white;
-    border-radius: 5px;
+    color: #FFFFFF;
+  }
 
-    @media (max-width: 480px) {
-      width: 100%;
+  @media (max-width: 480px) {
+        margin-top: 1rem;
     }
 `

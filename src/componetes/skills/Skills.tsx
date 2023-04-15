@@ -67,15 +67,8 @@ function Skills() {
   return (
     <ContainerSkills id='skills'>
         <div >
-        <p >
-        {/* Estou procurando ingressar em uma equipe
-        multifuncional que valoriza a melhoria da vida das
-        pessoas por meio das tecnologias que estao abaixo e outras */}
-        Logo abaixo temos algumas skills no qual tenho conhecimentos solido muitas aprendi na faculdade e outras
-em cursos extras no momento esta no display as skills front-and para verificar as
-skills back-and click no botão abaixo
-        </p> 
-        <BtnSend onClick={handleChangeTech}>{techs=== 'front'? 'Back-and': 'Front-and'}</BtnSend>
+    
+        
         <TodasSkills>
             
 
@@ -88,7 +81,7 @@ skills back-and click no botão abaixo
                 checked={isRadioSelected('javaScript')}
                 onChange={handleRadioClick}
             />
-            <label htmlFor="js"><img src={techs=== 'front'? javaScriptSimbol: nodeSimbol} alt="" /> </label>
+            <label htmlFor="js"><img style={{width: '50%'}} src={techs=== 'front'? javaScriptSimbol: nodeSimbol} alt="" /> </label>
             </Skiil>
             <Skiil>
                 <input 
@@ -99,7 +92,7 @@ skills back-and click no botão abaixo
                     onChange={handleRadioClick}
                 />
                 
-                <label htmlFor="reactJs"><img src={techs=== 'front'? reactSimbol: '???'} alt="" /></label>
+                <label htmlFor="reactJs"><img style={{width: '50%'}} src={techs=== 'front'? reactSimbol: '???'} alt="" /></label>
             </Skiil>
             <Skiil>
                 <input 
@@ -110,7 +103,7 @@ skills back-and click no botão abaixo
                     checked={isRadioSelected('htmlBtn')}
                     onChange={handleRadioClick}
                 />
-                <label htmlFor="html"><img src={techs=== 'front'? htmlSimbol: expressSimbol} alt="" /></label>
+                <label htmlFor="html"><img style={{width: '50%'}} src={techs=== 'front'? htmlSimbol: expressSimbol} alt="" /></label>
             </Skiil>
             <Skiil>
                 <input
@@ -121,7 +114,7 @@ skills back-and click no botão abaixo
                     checked={isRadioSelected('cssBtn')}
                     onChange={handleRadioClick}
                 />
-            <label htmlFor="css"><img src={techs=== 'front'? cssSimbol: fireaseImg} alt="" /></label>
+            <label htmlFor="css"><img style={{width: '50%'}} src={techs=== 'front'? cssSimbol: fireaseImg} alt="" /></label>
             </Skiil>
             <Skiil>
                 <input
@@ -132,7 +125,7 @@ skills back-and click no botão abaixo
                     checked={isRadioSelected('typeScript')}
                     onChange={handleRadioClick}
                 />
-                <label htmlFor="typeScript"><img src={techs=== 'front'?typeScriptSimbol: mongoSimbol} alt="" /></label>
+                <label htmlFor="typeScript"><img style={{width: '50%'}} src={techs=== 'front'?typeScriptSimbol: mongoSimbol} alt="" /></label>
             </Skiil>
             <Skiil>
                 <input  
@@ -142,45 +135,20 @@ skills back-and click no botão abaixo
                         checked={isRadioSelected('next')}
                         onChange={handleRadioClick}
                     />
-                    <label htmlFor="nextJs"><img src={techs=== 'front'? nextSimbol: MySqlImagem} alt="" /></label>
+                    <label htmlFor="nextJs"><img style={{width: '50%'}} src={techs=== 'front'? nextSimbol: MySqlImagem} alt="" /></label>
             </Skiil>
-            {/* <Skiil><img src={nodeSimbol} alt="" />
-                <input type="radio" 
-                        name='nodeJs' 
-                        value='nodeJs' 
-                        checked={isRadioSelected('nodeJs')}
-                        onChange={handleRadioClick}
-                    />
-            </Skiil> */}
-            {/* <Skiil><img src={expressSimbol} alt="" />
-                <input type="radio" 
-                        name='express' 
-                        value='express' 
-                        checked={isRadioSelected('express')}
-                        onChange={handleRadioClick}
-                    />
-            </Skiil> */}
-            {/* <Skiil><img src={mongoSimbol} alt="" />
-                <input type="radio" 
-                        name='mongoDb' 
-                        value='mongoDb' 
-                        checked={isRadioSelected('mongoDb')}
-                        onChange={handleRadioClick}
-                    />
-            </Skiil> */}
+            
         </TodasSkills>
         </div>
         
-        <ContainerVetores>
-            {/* <PrimeiroVetorFromRight src={primeiroVetorFromRight} alt="" /> */}
-        </ContainerVetores>
+       
         <ContainerSkillSelecionada>
             <Cube techs={techs} selectedRadio={selectedRadio} rotaite={rotaite}/>
-            <img style={{position: 'absolute', width: '80%'}} src={anuel01} alt="" />
-            <img style={{position: 'absolute', width: '90%'}} src={anuel02} alt="" />
-            <img style={{position: 'absolute', width: '100%'}} src={anuel03} alt="" />
+            <img style={{position: 'absolute', width: '50%'}} src={anuel01} alt="" />
+            <img style={{position: 'absolute', width: '60%'}} src={anuel02} alt="" />
+            <img style={{position: 'absolute', width: '70%'}} src={anuel03} alt="" />
         </ContainerSkillSelecionada>
-        
+        <BtnSend onClick={handleChangeTech}>{techs=== 'front'? 'setCube(Back-and)': 'setCube(Front-and)'}</BtnSend>
     </ContainerSkills>
   )
 }

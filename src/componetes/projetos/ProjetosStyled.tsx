@@ -11,11 +11,17 @@ interface ChidrenProps {
 
 export const ContainerProjetosComBtns = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    
     @media (max-width: 480px) {
         gap: 1rem;
     }
@@ -23,94 +29,120 @@ export const ContainerProjetosComBtns = styled.div`
 
 export const ContainerProjetos = styled.div`
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20%;
-    width: 90%;
-
-    background-image: url(${fundoFoto});
+    background: #151515;
+    min-width: 320px;
+    max-width: 320px;
+    height: 454px;
+    border-radius: 15px;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 50%;
-    position: relative;
-    margin-bottom: 1rem;
+    box-shadow: 0px 6px 22px -3px rgba(0, 0, 0, 0.5);
+    
+    
 
     @media(max-width: 480px) {
-        flex-direction: column;
-        gap: 0;
+        min-width: 300px;
     }
 `
 export const ContainerTela = styled.a`
-    width: 50%;
-    height: 341px;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    background-image: url(${fundoFoto});
-    @media screen {
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    /* @media screen {
      width: 100%;
      padding: .5rem;
      height: 200px;
-    }
+    } */
 `
 export const Tela = styled.div`
-    width: 98%;
-    height: 100%;
+    width: 100%;
+    
+    height: 250px;
     background-image: url(${({tela}: ChidrenProps) => tela});
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
     cursor: pointer;
-`
-
-
-export const ContainerTitleDescription = styled.div`
-    
-   
 `
 
 export const ContainerDescricao = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
     align-items: center;
-    justify-content: center;
-    border-radius: 15px;
+    justify-content: space-between;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     margin: auto;
-    padding: .3rem;
-    background-image : url(${fundoImgDescricao});
+    color: #607B96;
+    padding: 1rem;
+    border-top: solid #011221 2px;
+    /* background-image : url(${fundoImgDescricao}); */
     background-size: 100%;
     background-repeat: no-repeat;
     @media (max-width: 480px) {
-        height: 100px;
+        
+    }
+
+    p{
+        font-size: smaller;
     }
 `
 
-export const Paragrafo = styled.p`
-    display: flex;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 27px;
-    display: flex;
-    color: #CCD6F6;
-    @media (max-width: 480px) {
-        line-height: 15px;
-    }
-`
 
-export const ContainerBtns = styled.div`
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    
-`
 
 export const Btns = styled.div`
     cursor: pointer;
+    height: 100px;
+    display: flex;
+    align-items: center;
     padding: .5rem;
     background: transparent;
-    border: solid 1px white;
+    /* border: solid 1px white; */
+    font-size: larger;
+   
+    :hover{
+        color: #43D9AD;
+    }
+    
+`
+
+export const BtnView = styled.a `
+    display: flex;
+    width: 149px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 14px;
+   
+    background: #1C2B3A;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    
+`
+
+export const ContainerCarousel = styled.div`
+width: 75%;
+padding: 0 1em 0 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+border-radius: 15px;
+
+@media (max-width: 480px) {
+    height: 100%;
+    
+    padding: 0;
+}
 `
