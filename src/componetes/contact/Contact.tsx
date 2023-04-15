@@ -45,9 +45,9 @@ const Contact:React.FC = () => {
     
 
   return (
-    <MainContact id='contact'>
+    <MainContact>
     
-    <ContainerContact>
+    <ContainerContact id='contact'>
     <h2>Contate-me</h2>
         {/* <ContainerCardsContact>
         

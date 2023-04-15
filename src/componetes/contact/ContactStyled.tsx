@@ -6,15 +6,17 @@ export const MainContact = styled.div`
     display: flex;
     width: 100vw;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
-    height: 100vh;
+    height: 95vh;
 `
 
 export const ContainerContact = styled.div`
     display: flex;
-    width: 100%;
-    /* background-image : url(${fundoFoto}); */
+    flex-direction: column;
+    width: 50%;
+    
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
