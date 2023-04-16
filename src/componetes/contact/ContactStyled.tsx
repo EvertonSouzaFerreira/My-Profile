@@ -30,6 +30,11 @@ export const ContainerContact = styled.div`
       font-size: 28px;
       line-height: 16px;
     }
+    @media (max-width: 880px) {
+    width: 80%;
+
+  }
+
     @media (max-width: 480px) {
     width: 100%;
     flex-direction: column;

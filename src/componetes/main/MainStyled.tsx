@@ -14,6 +14,15 @@ export const ContainerMain = styled.div`
     background-size: cover;
     height: 100vh;
     width: 100vw;
+    @media (max-width: 880px) {
+    
+    font-size: smaller;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 1rem 0 1rem;
+  }
+
+
     @media (max-width: 480px) {
     flex-direction: column-reverse;
     font-size: smaller;
@@ -67,10 +76,10 @@ export const Frase = styled.div`
       font-size: 38px;
       line-height: 56px;
     }
-    h3{
+    h4{
       font-weight: 450;
       font-size: 22px;
-      line-height: 42px;
+      line-height: 32px;
       color: #818DED;
       margin: 0;
     }
@@ -86,10 +95,10 @@ export const Frase = styled.div`
     }
     //
 
-    @media (max-width: 480px) {
+    @media (max-width: 680px) {
         margin-top: 0;
         gap: 0;
-
+        padding: 0;
         h2{
         margin: 0;
         font-weight: 300;
@@ -104,6 +113,8 @@ export const Frase = styled.div`
     }
   }
 `
+
+
 
 
 

@@ -6,6 +6,9 @@ import fundoFoto from '../../imgs/fundo-Foto.png'
 interface ChidrenProps {
     tela: string
 }
+interface ContainerProjetosProps {
+    width: number;
+  }
 
 
 
@@ -23,18 +26,18 @@ export const ContainerProjetosComBtns = styled.div`
     overflow: hidden;
     
     @media (max-width: 480px) {
-        gap: 1rem;
+        gap: .5rem;
     }
 `
 
-export const ContainerProjetos = styled.div`
+export const ContainerProjetos = styled.div<ContainerProjetosProps>`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: #151515;
-    min-width: 320px;
-    max-width: 320px;
+    min-width: 309px;
+    max-width: 309px;
     height: 454px;
     border-radius: 15px;
     background-repeat: no-repeat;
@@ -43,7 +46,10 @@ export const ContainerProjetos = styled.div`
     
 
     @media(max-width: 480px) {
-        min-width: 300px;
+        /* min-width: ${(props) => props.width}px;
+        max-width: ${(props) => props.width}px; */
+        min-width: 309px;
+        max-width: 309px;
     }
 `
 export const ContainerTela = styled.a`
@@ -109,7 +115,7 @@ export const Btns = styled.div`
     background: transparent;
     /* border: solid 1px white; */
     font-size: larger;
-   
+    
     :hover{
         color: #43D9AD;
     }
@@ -142,7 +148,19 @@ border-radius: 15px;
 
 @media (max-width: 480px) {
     height: 100%;
-    
     padding: 0;
+    width: 309px;
 }
+`
+
+export const CardsCarosel = styled.div`
+    display: flex;
+    gap: 1rem;
+
+@media (max-width: 480px) {
+    
+    gap: 0;
+    
+}
+    
 `

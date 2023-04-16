@@ -26,10 +26,11 @@ import primeiroVetorFromRight from '../../imgs/primeiroVetorFromRight.png'
 
 import { ContainerSkills, 
     TodasSkills, 
-    Skiil, ImgSelecionada, 
-    ContainerSkillSelecionada, 
-    ContainerVetores,
-    PrimeiroVetorFromRight,
+    Skiil, 
+    ContainerSkillSelecionada,
+    Arco01,
+    Arco02,
+    Arco03, 
     BtnSend } from './SkillsStyled'
 import Cube from '../cube/Cube'
 
@@ -66,12 +67,7 @@ function Skills() {
 
   return (
     <ContainerSkills id='skills'>
-        <div >
-    
-        
         <TodasSkills>
-            
-
             <Skiil>
             <input 
                 type="radio" 
@@ -139,14 +135,14 @@ function Skills() {
             </Skiil>
             
         </TodasSkills>
-        </div>
+       
         
        
         <ContainerSkillSelecionada>
             <Cube techs={techs} selectedRadio={selectedRadio} rotaite={rotaite}/>
-            <img style={{position: 'absolute', width: '50%'}} src={anuel01} alt="" />
-            <img style={{position: 'absolute', width: '60%'}} src={anuel02} alt="" />
-            <img style={{position: 'absolute', width: '70%'}} src={anuel03} alt="" />
+            <Arco01  src={anuel01} alt="" />
+            <Arco02  src={anuel02} alt="" />
+            <Arco03  src={anuel03} alt="" />
         </ContainerSkillSelecionada>
         <BtnSend onClick={handleChangeTech}>{techs=== 'front'? 'setCube(Back-and)': 'setCube(Front-and)'}</BtnSend>
     </ContainerSkills>

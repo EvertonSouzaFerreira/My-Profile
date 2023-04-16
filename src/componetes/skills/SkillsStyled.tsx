@@ -8,7 +8,6 @@ export const ContainerSkills = styled.div`
     display: flex;
     margin: auto;
     position: relative;
-   
     align-items: center;
     width: 100%;
     flex-direction: column;
@@ -26,28 +25,26 @@ export const ContainerSkills = styled.div`
 
 export const TodasSkills = styled.ul`
     display: flex;
-    gap: 1rem;
     
+    justify-content: center;
+    width: 100%;
+    gap: .5rem;
     list-style: none;
-    @media (max-width: 980px) {
-        gap: .2rem;
-        flex-wrap: nowrap;
-        align-items: flex-start;
-        justify-content: flex-start;
-        padding: 0;
+   
+    @media (max-width: 880px) {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 
     @media (max-width: 480px) {
         gap: .2rem;
-        align-items: flex-start;
-        justify-content: flex-start;
         padding: 0;
     }
 `
 export const Skiil = styled.li`
     width: 44px;
     aspect-ratio: 1;
-    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,11 +53,19 @@ export const Skiil = styled.li`
     input{
         width: 74px;
         aspect-ratio: 1;
-        padding: 1rem;
+        
     }
     :hover{
         background-image: url(${fundoSkill});
     }
+
+    /* @media (max-width: 880px) {
+    
+    font-size: smaller;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 1rem 0 1rem;
+  } */
 `
 
 export const ImgSelecionada = styled.div`
@@ -69,30 +74,51 @@ export const ImgSelecionada = styled.div`
     justify-content: center;
     align-items: center;
     aspect-ratio: 1;
-    
+   
 `
 
 export const ContainerSkillSelecionada = styled.div`
     width: 100%;
-    max-width: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 330px;
+    
     background-position: bottom;
     background-repeat: no-repeat;
+
+    @media (max-width: 880px) {
+        height: 200px;
+        img:first-of-type{
+            width: 100%;
+        }
+    }
    
 `
 
-export const ContainerVetores = styled.div`
-    
-`
-export const PrimeiroVetorFromRight = styled.img`
+export const Arco01 = styled.img`
+    width: 50%;
     position: absolute;
-    height: 60%;
-    top: 11%;
-    right: 27%;
-    transform: rotateZ(10deg);
+    @media (max-width: 880px) {
+                
+                width: 100%;
+        }
+`
+export const Arco02 = styled.img`
+    width: 60%;
+    position: absolute;
+    @media (max-width: 880px) {
+                
+                width: 90%;
+        }
+`
+export const Arco03 = styled.img`
+    width: 70%;
+    position: absolute;
+    @media (max-width: 880px) {
+                
+                width: 80%;
+        }
 `
 
 export const BtnSend = styled.button`
@@ -109,6 +135,9 @@ export const BtnSend = styled.button`
     border: none;
     color: #FFFFFF;
   }
+  @media (max-width: 880px) {
+       width: 100%;
+    }
 
   @media (max-width: 480px) {
         margin-top: 1rem;

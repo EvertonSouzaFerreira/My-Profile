@@ -8,13 +8,21 @@ export const ContainerHeader = styled.div`
     justify-content: space-between;
     padding: 0 5em 0 5rem;
     background: #313131;
-    
+    position: relative;
     z-index: 10;
-    width: 100%;
+    width: 100vw;
     height: 6vh;
     border-bottom: 1px solid #1E2D3D;
     position: fixed;
     box-shadow: 0px 6px 22px -3px rgba(0, 0, 0, 0.5);
+
+
+    @media (max-width: 880px) {
+    
+    font-size: smaller;
+    padding: 0 1rem 0 1rem;
+  }
+
     @media (max-width: 480px) {
         
         height: 5vh;
@@ -53,9 +61,27 @@ export const Ul = styled.ul`
     
     @media (max-width: 480px) {
         gap: 2rem;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #313131;
+        padding: 2rem;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         
-        padding: 0 5px;
     }
+`
+
+export const MenuHamburg = styled.div`
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    right: 10px;
+    color: white;
+   
+    :hover{
+        color: #43D9AD;
+    }
+
 `

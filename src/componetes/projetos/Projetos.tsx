@@ -8,6 +8,7 @@ import {
   ContainerDescricao, 
   ContainerCarousel,
   ContainerProjetosComBtns, 
+  CardsCarosel,
   Btns,
   BtnView} from './ProjetosStyled'
 import { cursorTo } from 'readline';
@@ -18,8 +19,9 @@ const Projetos: React.FC =() => {
   const carousel = useRef<HTMLDivElement>(null) as RefObject<HTMLDivElement>
   const [projetos, setProjetos] = useState(0)
   const [width, setWidth] = useState(0)
-  
+  const widthTotal = window.innerWidth;
 
+  
   const handleMoveProject = () => {
     carousel.current && (carousel.current.scrollLeft += width || 0)
   }
@@ -28,9 +30,11 @@ const Projetos: React.FC =() => {
   }
  useEffect(() => {
   carousel.current && setWidth(carousel.current?.offsetWidth)
- },[])
+  console.log(width)
+  console.log(widthTotal)
+ },[width])
 
-
+ 
 
   return (
     
@@ -41,20 +45,17 @@ const Projetos: React.FC =() => {
    whileTap={{cursor: 'grabbing'}}
    >
     <div>
-    <motion.div style={{
-      display: 'flex', 
-      gap: '1rem', 
-      }}
-    drag='x'
-    dragConstraints={{right: 0, left: -width}}
-    initial={{x:500}}
-    animate={{x:0}}
-    transition={{duration:2}}
+    <CardsCarosel
+    // drag='x'
+    // dragConstraints={{right: 0, left: -width}}
+    // initial={{x:500}}
+    // animate={{x:0}}
+    // transition={{duration:2}}
     >
 
     {infos.map((card, index)=>{
               return(
-                <ContainerProjetos key={index}>              
+                <ContainerProjetos  width={widthTotal-40} key={index}>              
                   <Tela tela={getProjetos(card).tela}/>
                   <ContainerDescricao>
                     <p>{getProjetos(card).message}</p> 
@@ -65,7 +66,7 @@ const Projetos: React.FC =() => {
               )
             })}
     
-    </motion.div>
+    </CardsCarosel>
     </div>
   </motion.div>
   </ContainerCarousel>
