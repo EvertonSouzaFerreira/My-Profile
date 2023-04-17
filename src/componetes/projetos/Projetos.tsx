@@ -41,8 +41,8 @@ const Projetos: React.FC =() => {
   <ContainerProjetosComBtns id='projetos'>   
   <Btns onClick={handleMoveProjectLeft}><SlArrowLeft/></Btns> 
   <ContainerCarousel>
-  <motion.div ref={carousel} style={{overflow: 'hidden', cursor: 'grab'}}
-   whileTap={{cursor: 'grabbing'}}
+  <motion.div ref={carousel} style={{overflow: 'hidden', }}
+   whileTap={{}}
    >
     <div>
     <CardsCarosel

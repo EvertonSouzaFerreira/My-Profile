@@ -10,6 +10,17 @@ export const MainContact = styled.div`
     align-items: center;
     gap: 1rem;
     height: 95vh;
+
+    ul{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+     
+      
+    }
 `
 
 export const ContainerContact = styled.div`

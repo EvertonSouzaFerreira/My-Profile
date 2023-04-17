@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import gitHubIcon from '../../imgs/githubSimbol.png'
+import linkedinImg from '../../imgs/linkedinImg.png'
 import { AiFillLinkedin } from 'react-icons/ai';
 
 import { ContainerContact, ContainerCardsContact,ContainerForm, CardContact, InputInfos, Textarea, BtnSend,MainContact  } from './ContactStyled'
@@ -58,9 +59,8 @@ const Contact:React.FC = () => {
 
     </ContainerContact>
     <ul>
-      <li style={{fontSize: '10px'}}><img src={gitHubIcon} alt="" /> https://github.com/EvertonSouzaFerreira</li>
-      <li style={{fontSize: '10px'}}>  https://www.linkedin.com/in/everton-de-souza-ferreira-1417921b2/</li>
-      
+      <li style={{fontSize: '10px'}}><img src={gitHubIcon} alt="" /><a href="https://github.com/EvertonSouzaFerreira">https://github.com/EvertonSouzaFerreira</a> </li>
+      <li style={{fontSize: '10px'}}> <img src={linkedinImg} alt="" /> <a href="https://www.linkedin.com/in/everton-de-souza-ferreira-1417921b2/">https://www.linkedin.com/in/everton-de-souza-ferreira-1417921b2/</a> </li>
     </ul>
     </MainContact>
     

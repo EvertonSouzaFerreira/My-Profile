@@ -75,7 +75,7 @@ export const Tela = styled.div`
     background-position: center;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    cursor: pointer;
+    /* cursor: pointer; */
 `
 
 export const ContainerDescricao = styled.div`
