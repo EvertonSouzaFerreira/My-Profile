@@ -18,6 +18,7 @@ export const ContainerMain = styled.div`
     
     font-size: smaller;
     align-items: center;
+    justify-content: center;
     gap: 3rem;
     padding: 0 1rem 0 1rem;
   }

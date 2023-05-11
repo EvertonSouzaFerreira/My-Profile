@@ -34,12 +34,17 @@ import { ContainerSkills,
     BtnSend } from './SkillsStyled'
 import Cube from '../cube/Cube'
 
-function Skills() {
+interface ChidrenProps{
+    techs: string 
+    setTechs: React.Dispatch<React.SetStateAction<string>>;
+}
+
+function Skills({techs, setTechs}:ChidrenProps) {
 
     const [selectedRadio, setSelectedRadio] = React.useState('')
     const [rotaite, setRotaite] = React.useState(true)
 
-    const [techs, setTechs] = useState('front')
+    
 
 
     const isRadioSelected = (value: string): boolean => selectedRadio === value;

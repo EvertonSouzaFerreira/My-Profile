@@ -1,23 +1,27 @@
 import React, {useState, useEffect} from 'react'
+
 import logo from '../../imgs/Logo.png'
 import Cube from '../cube/Cube'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { GrClose } from 'react-icons/gr';
-
-// interface ChidrenProps {
-//   selectedRadio: string
-//   rotaite: boolean
-//   techs: string
-// }
-
+import { SiMicrosofttranslator } from 'react-icons/si';
+import {TfiWorld} from 'react-icons/tfi'
 import { ContainerHeader, Ul, LogoContainer, ImgLogo, MenuHamburg} from './HeaderStyled'
+import BtnEnglish from '../btnEnglish/BtnEnglish';
+
+
+interface ChidrenProps {
+  setTradutor: React.Dispatch<React.SetStateAction<boolean>>;
+  tradutor: boolean
+}
 
 
 
 
-const Header:React.FC = () => {
+
+
+function Header ({setTradutor, tradutor}: ChidrenProps) {
   const [isHamburgMenu, setIsHamburgMenu] = useState<boolean>(false);
-
   const [menuShow, setMenuShow] = useState<boolean>(false);
 
 
@@ -51,6 +55,11 @@ const Header:React.FC = () => {
             <a href='#'>_Hello</a>
             <a href='#projetos'>_Projects</a>
             <a href='#contact'>_Contact</a>
+            <div>
+              <TfiWorld style={{width: '30px'}}/>
+              <BtnEnglish  setTradutor={setTradutor} tradutor={tradutor}/>
+            </div>
+            
         </Ul>}
     </ContainerHeader>
   )

@@ -13,12 +13,17 @@ import {
   BtnView} from './ProjetosStyled'
 import { cursorTo } from 'readline';
 
+interface ChidrenProps{
+  tradutor: boolean
+}
+
 const infos =['ProjetoPokemon', 'ProjetoEcommercial', "ProjetoTodo", 'ProjetoLivro', 'ProjetoIbge', 'ProjetoMks']
 
-const Projetos: React.FC =() => {
+const Projetos: React.FC<ChidrenProps> =({tradutor}) => {
   const carousel = useRef<HTMLDivElement>(null) as RefObject<HTMLDivElement>
   const [projetos, setProjetos] = useState(0)
   const [width, setWidth] = useState(0)
+  const [isOtherStateTrue, setIsOtherStateTrue] = useState(false);
   const widthTotal = window.innerWidth;
 
   
@@ -46,20 +51,17 @@ const Projetos: React.FC =() => {
    >
     <div>
     <CardsCarosel
-    // drag='x'
-    // dragConstraints={{right: 0, left: -width}}
-    // initial={{x:500}}
-    // animate={{x:0}}
-    // transition={{duration:2}}
+    
     >
 
     {infos.map((card, index)=>{
+      const projeto = getProjetos(card, tradutor); // Chamada da função getProjetos com o estado booleano como argumento
               return(
                 <ContainerProjetos  width={widthTotal-40} key={index}>              
-                  <Tela tela={getProjetos(card).tela}/>
+                  <Tela tela={projeto.tela}/>
                   <ContainerDescricao>
-                    <p>{getProjetos(card).message}</p> 
-                      <BtnView href={getProjetos(card).link}>view-project</BtnView>
+                    <p>{projeto.message}</p> 
+                      <BtnView href={projeto.link}>view-project</BtnView>
                   </ContainerDescricao>
               </ContainerProjetos>
                 
