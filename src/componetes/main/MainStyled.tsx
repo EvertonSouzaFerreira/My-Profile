@@ -25,11 +25,12 @@ export const ContainerMain = styled.div`
 
 
     @media (max-width: 480px) {
+    height: fit-content;
     flex-direction: column-reverse;
     font-size: smaller;
     align-items: center;
     gap: 3rem;
-    padding: 0 2rem 0 2rem;
+    padding: 5rem 2rem 0 2rem;
   }
 `
 export const ContainerCube = styled.div`

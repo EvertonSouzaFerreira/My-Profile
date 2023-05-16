@@ -26,7 +26,9 @@ export const ContainerProjetosComBtns = styled.div`
     overflow: hidden;
     
     @media (max-width: 480px) {
-        gap: .5rem;
+        margin-top: 3rem;
+        height: 550px;
+        
     }
 `
 
@@ -50,6 +52,7 @@ export const ContainerProjetos = styled.div<ContainerProjetosProps>`
         max-width: ${(props) => props.width}px; */
         min-width: 309px;
         max-width: 309px;
+        
     }
 `
 export const ContainerTela = styled.a`
@@ -59,11 +62,11 @@ export const ContainerTela = styled.a`
     justify-content: flex-start;
     align-items: flex-start;
     overflow: hidden;
-    /* @media screen {
-     width: 100%;
-     padding: .5rem;
-     height: 200px;
-    } */
+    
+    @media (max-width: 480px) {
+    
+     height: fit-content;
+    }
 `
 export const Tela = styled.div`
     width: 100%;
