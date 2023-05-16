@@ -10,13 +10,13 @@ export const MainContact = styled.div`
     align-items: center;
     gap: 1rem;
     height: 95vh;
-
+   
     ul{
       display: flex;
       width: 100%;
       flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
+      align-items: flex-start;
+      justify-content: center;
       gap: 1rem;
      
       
@@ -35,6 +35,7 @@ export const ContainerContact = styled.div`
     font-size: 12px;
     gap: 1rem;
     color: #E5E9F0;
+   
     h2{
       margin: 0;
       font-weight: 300;
@@ -101,7 +102,8 @@ export const InputInfos = styled.input`
     position: relative;
     background: transparent;
     width: 100%;
-    border: solid 1px #818DED;
+    background: #0D090F;
+    border: solid 1px #363B62;
     font-size: 14px;
     padding: 10px;
     color: white;
@@ -111,25 +113,27 @@ export const Textarea = styled.textarea`
      background: transparent;
      width: 100%;
      height: 200px;
-     border: solid 1px #818DED;
+     border: solid 1px #363B62;
+     background: #0D090F;
      font-size: 14px;
      padding: 5px;
      color: white;
 `
 
 export const BtnSend = styled.button`
-    background: none;
-  color: #818DED;
+  background: #6524AF;
+  color: white;
   cursor: pointer;
-  border: solid 1px #818DED;
+  /* border: solid 1px #818DED; */
+  border: none;
   border-radius: 5px;
   width: 50%;
   padding: .5rem;
   :hover{
-    color: #43D9AD;
-    background: linear-gradient(180deg, #C443D9 0%, #4D5BCE 100%);
+    color: #0D090F;
+    background: #493A5A;
     border: none;
-    color: #FFFFFF;
+    
   }
 
   @media (max-width: 480px) {

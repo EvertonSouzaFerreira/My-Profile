@@ -122,18 +122,20 @@ export const Arco03 = styled.img`
 `
 
 export const BtnSend = styled.button`
-  background: none;
-  color: #818DED;
+  background: #6524AF;
+  color: white;
   cursor: pointer;
-  border: solid 1px #818DED;
+  border: none;
   border-radius: 5px;
   width: 50%;
   padding: .5rem;
   :hover{
-    color: #43D9AD;
-    background: linear-gradient(180deg, #C443D9 0%, #4D5BCE 100%);
+    :hover{
+    color: #0D090F;
+    background: #493A5A;
     border: none;
-    color: #FFFFFF;
+    
+  }
   }
   @media (max-width: 880px) {
        width: 100%;

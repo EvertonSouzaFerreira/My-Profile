@@ -13,7 +13,11 @@ interface FormValues {
     message: string;
   }
 
-const Contact:React.FC = () => {
+  interface ChidrensProps{
+    tradutor: boolean;
+  }
+
+const Contact:React.FC<ChidrensProps> = ({tradutor}) => {
     const [formValues, setFormValues] = useState<FormValues>({ nome: '', email: '', message: '' });
 
     const form = useRef<HTMLFormElement>(null)
@@ -49,18 +53,18 @@ const Contact:React.FC = () => {
     <MainContact>
     
     <ContainerContact id='contact'>
-    <h2>Contate-me</h2>
+    {tradutor? <h2>Contate-me</h2>: <h2>Contact me</h2>}
         <ContainerForm ref={form} onSubmit={sendEmail}>
-            <InputInfos type="text" name='nome' placeholder='Nome Completo' value={formValues.nome} onChange={(event) => setFormValues({ ...formValues, nome: event.target.value })} required />
-            <InputInfos type="email" name='email' placeholder='Seu Email' value={formValues.email} onChange={(event) => setFormValues({ ...formValues, email: event.target.value })} required />
+            <InputInfos type="text" name='nome' placeholder='Name' value={formValues.nome} onChange={(event) => setFormValues({ ...formValues, nome: event.target.value })} required />
+            <InputInfos type="email" name='email' placeholder={tradutor? "Seu Email": 'Your Email'} value={formValues.email} onChange={(event) => setFormValues({ ...formValues, email: event.target.value })} required />
             <Textarea id='message' name="message" value={formValues.message} onChange={(event) => setFormValues({ ...formValues, message: event.target.value })} required/>
-            <BtnSend type='submit'>Enviar Mensagem</BtnSend>
+            <BtnSend type='submit'>{tradutor? "Enviar Mensagem": 'Send Message'}</BtnSend>
         </ContainerForm>
 
     </ContainerContact>
     <ul>
-      <li style={{fontSize: '10px'}}><img src={gitHubIcon} alt="" /><a href="https://github.com/EvertonSouzaFerreira">https://github.com/EvertonSouzaFerreira</a> </li>
-      <li style={{fontSize: '10px'}}> <img src={linkedinImg} alt="" /> <a href="https://www.linkedin.com/in/everton-de-souza-ferreira-1417921b2/">https://www.linkedin.com/in/everton-de-souza-ferreira-1417921b2/</a> </li>
+      <li style={{fontSize: '14px', display: 'flex', gap: '1rem', alignItems: 'center'}}><img style={{width: 'px'}} src={gitHubIcon} alt="" /><a style={{color: '#FFF'}} href="https://github.com/EvertonSouzaFerreira">https://github.com/EvertonSouzaFerreira</a> </li>
+      <li style={{fontSize: '14px', display: 'flex', gap: '1rem', alignItems: 'center'}}> <img style={{width: '25px'}} src={linkedinImg} alt="" /> <a style={{color: '#FFF'}} href="https://www.linkedin.com/in/everton-de-souza-ferreira-1417921b2/">https://www.linkedin.com/in/everton-de-souza-ferreira-1417921b2/</a> </li>
     </ul>
     </MainContact>
     

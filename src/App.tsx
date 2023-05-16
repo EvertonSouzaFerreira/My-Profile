@@ -7,6 +7,7 @@ import Cube from './componetes/cube/Cube';
 import Projetos from './componetes/projetos/Projetos';
 import Contact from './componetes/contact/Contact';
 import GlobalStyle from './contents/GlobalStyle';
+import About from './componetes/about/About';
 
 function App() {
 
@@ -20,7 +21,8 @@ function App() {
       <Main techs={techs} tradutor={tradutor} setTechs={setTechs}/>
       {/* <Skills/> */}
       <Projetos tradutor={tradutor}/>
-      <Contact/>
+      <About tradutor={tradutor}/>
+      <Contact tradutor={tradutor}/>
     </div>
   );
 }
