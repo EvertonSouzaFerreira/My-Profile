@@ -1,4 +1,5 @@
 import React from 'react';
+import telaOxygene from '../imgs/Oxygene.png'
 import telaPokemon from '../imgs/TelaPokemon.png'
 import telaprojetoSneakers from '../imgs/projetoSneakers.png'
 import telaProjetoTodo from '../imgs/ProjetoTodo.png'
@@ -21,6 +22,18 @@ export const getProjetos = (type: string, isOtherStateTrue: boolean) => {
         }else{
           return {message: 'This is a Front-end application project that aims to provide a pleasant and intuitive user experience. It is mainly composed of user interface elements such as buttons, menus, and forms, and uses features such as responsive design, smooth animations and transitions, attractive colors, and clear typography to make navigation and interaction with the application easier and more enjoyable.', tela: telaprojetoSneakers, link: 'https://e-comercial.vercel.app/'};
         }
+        case "ProjetoOxygene":
+          if(isOtherStateTrue){
+            return {message: 'É com satisfação que compartilho o projeto recente que desenvolvemos: um site dedicado à divulgação de negócios ligados à oxigenoterapia. Nosso objetivo foi criar uma plataforma envolvente para destacar os serviços e benefícios associados a esse campo, atendendo às expectativas do cliente.', tela: telaOxygene, link: 'https://oxygene.com.br/'};
+          }else{
+            return {message: 'It is with great pleasure that I share our recent project—a website dedicated to promoting businesses related to oxygen therapy. Our aim was to create an engaging platform to showcase the services and benefits associated with this field, meeting the clients expectations.', tela: telaOxygene, link: 'https://oxygene.com.br/'};
+          }
+          case "ProjetoDermarkt":
+            if(isOtherStateTrue){
+              return {message: 'portugues.', tela: telaOxygene, link: 'https://trendsmove.com.br/'};
+            }else{
+              return {message: 'English', tela: telaOxygene, link: 'https://trendsmove.com.br/'};
+            }
         
       case "ProjetoTodo":
         if(isOtherStateTrue){

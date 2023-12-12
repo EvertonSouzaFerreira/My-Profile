@@ -55,3 +55,6 @@ export const DescricaoFoto = styled.div`
         }
     }
 `
+
+//Olá, Daiane.
+

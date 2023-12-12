@@ -27,7 +27,7 @@ const Main:React.FC<ChidrensProps> = ({tradutor, techs, setTechs}) => {
               <p>// apaixonado por criar experiencias excepcionais na web</p>
               <p>// Como desenvolvedor full-stack, meu foco principal é fornecer experiencias excepcionais para os usuarios em todas as plataformas, sejam elas desktop, tablets ou smartphones.</p>
               <p>// Atualmente atuao utilizando</p>
-              <p><span>const </span> <span style={{color: '#80c9f9'}}>FrontEnd</span> = [<span style={{color: '#E99287'}}> HTML5, CSS3, JavaScript, ReactJs, TypeScript, NextJs </span>];</p>
+              <p><span>const </span> <span style={{color: '#80c9f9'}}>FrontEnd</span> = [<span style={{color: '#E99287'}}> HTML5, CSS3, JavaScript, ReactJs, TypeScript, JQuery </span>];</p>
               <p><span>const </span><span style={{color: '#80c9f9'}}> BackEnd</span> = [<span style={{color: '#E99287'}}>NodeJS, Express, FireBase, MongoDB, MySQL</span> ];</p>
               <p><span>const </span> <span style={{color: '#80c9f9'}}>cube</span> = <span style={{color: '#E99287'}}>{techs=== 'front'? "FrontEnd": 'BackEnd'}</span></p>
               <p><span>const </span><span style={{color: '#80c9f9'}}>githubLink</span> = <span style={{color: '#E99287'}}>https://github.com/EvertonSouzaFerreira</span></p>
@@ -37,7 +37,7 @@ const Main:React.FC<ChidrensProps> = ({tradutor, techs, setTechs}) => {
               <div>
                     <p>// As a full-stack developer, my primary focus is to create exceptional experiences for users across all platforms, including desktops, tablets, and smartphones.</p>
                     <p>// Currently, I work with a wide range of technologies and frameworks to build robust and scalable web applications</p>
-                    <p><span>const </span> <span style={{color: '#80c9f9'}}>FrontEnd</span> = [<span style={{color: '#E99287'}}> HTML5, CSS3, JavaScript, ReactJs, TypeScript, NextJs </span>];</p>
+                    <p><span>const </span> <span style={{color: '#80c9f9'}}>FrontEnd</span> = [<span style={{color: '#E99287'}}> HTML5, CSS3, JavaScript, ReactJs, TypeScript, JQuery </span>];</p>
                     <p><span>const </span><span style={{color: '#80c9f9'}}> BackEnd</span> = [<span style={{color: '#E99287'}}>NodeJS, Express, FireBase, MongoDB, MySQL</span> ];</p>
                     <p><span>const </span> <span style={{color: '#80c9f9'}}>cube</span> = <span style={{color: '#E99287'}}>{techs=== 'front'? "FrontEnd": 'BackEnd'}</span></p>
                     <p><span>const </span><span style={{color: '#80c9f9'}}>githubLink</span> = <span style={{color: '#E99287'}}>https://github.com/EvertonSouzaFerreira</span></p>

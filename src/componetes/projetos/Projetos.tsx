@@ -17,7 +17,7 @@ interface ChidrenProps{
   tradutor: boolean
 }
 
-const infos =['ProjetoPokemon', 'ProjetoEcommercial', "ProjetoTodo", 'ProjetoLivro', 'ProjetoIbge', 'ProjetoMks']
+const infos =['ProjetoOxygene', 'ProjetoEcommercial','ProjetoPokemon',  "ProjetoTodo", 'ProjetoLivro', 'ProjetoIbge', 'ProjetoMks']
 
 const Projetos: React.FC<ChidrenProps> =({tradutor}) => {
   const carousel = useRef<HTMLDivElement>(null) as RefObject<HTMLDivElement>

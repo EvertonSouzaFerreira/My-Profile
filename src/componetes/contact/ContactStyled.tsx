@@ -13,7 +13,7 @@ export const MainContact = styled.div`
    
     ul{
       display: flex;
-      width: 100%;
+      width: 80%;
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
