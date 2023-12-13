@@ -32,7 +32,7 @@ export const DescricaoFoto = styled.div`
 
     img{
         width: 374px;
-        height: 462px;
+        height: 374px;
         border-radius: 30px;
     }
 
@@ -56,5 +56,5 @@ export const DescricaoFoto = styled.div`
     }
 `
 
-//Olá, Daiane.
+
 

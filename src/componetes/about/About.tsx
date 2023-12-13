@@ -1,7 +1,7 @@
 import React from 'react'
 
 //imagens
-import me from '../../imgs/me02.jpg' 
+import me from '../../imgs/me-redondo.png' 
 
 //styled
 import {ContainerAbout, DescricaoFoto} from './AboutStyled'
